@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .box:before {
+  content: '';
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.2);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.container .box {
+  position: relative;
+  width: 350px;
+  padding: 40px;
+  background: white;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  text-align: center;
+}
+
+.container .box .icon {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  color: white;
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  border-radius: 50%;
+  font-size: 40px;
+  font-weight: 700;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.container .box .content {
+  position: relative;
+  z-index: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container .box .content h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  padding: 0;
+}
+
+.container .box .content p {
+  margin: 0;
+  padding: 0;
+}
+
+.container .box .content a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: white;
+  border-radius: 4px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  margin-top: 20px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.container .box:hover .content {
+  color: white;
+}
+
+.container .box:nth-child(1) .icon {
+  -webkit-box-shadow: 0 0 0 0 #e91e63;
+          box-shadow: 0 0 0 0 #e91e63;
+  background: #e91e63;
+}
+
+.container .box:nth-child(1):hover .icon {
+  -webkit-box-shadow: 0 0 0 400px #e91e63;
+          box-shadow: 0 0 0 400px #e91e63;
+}
+
+.container .box:nth-child(2) .icon {
+  -webkit-box-shadow: 0 0 0 0 #23e629;
+          box-shadow: 0 0 0 0 #23e629;
+  background: #23e629;
+}
+
+.container .box:nth-child(2):hover .icon {
+  -webkit-box-shadow: 0 0 0 400px #23e629;
+          box-shadow: 0 0 0 400px #23e629;
+}
+
+.container .box:nth-child(3) .icon {
+  -webkit-box-shadow: 0 0 0 0 #2196f3;
+          box-shadow: 0 0 0 0 #2196f3;
+  background: #2196f3;
+}
+
+.container .box:nth-child(3):hover .icon {
+  -webkit-box-shadow: 0 0 0 400px #2196f3;
+          box-shadow: 0 0 0 400px #2196f3;
+}
+/*# sourceMappingURL=styles.css.map */
